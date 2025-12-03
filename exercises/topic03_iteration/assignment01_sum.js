@@ -18,3 +18,17 @@ to a string using `toFixed`(inverse of parseFloat). Turning π into the string
     -1.7
 
 */
+import io from "../../utils/io-for-pf.js"
+
+let sum = 0
+
+while (true){
+    let number = parseFloat(io.read(""));
+
+    if (number === 0){
+        break;
+    }
+
+    sum += number
+}
+io.write(sum.toFixed(1))
