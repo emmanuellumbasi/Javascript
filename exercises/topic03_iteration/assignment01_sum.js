@@ -20,10 +20,12 @@ to a string using `toFixed`(inverse of parseFloat). Turning π into the string
 */
 import io from "../../utils/io-for-pf.js"
 
-let sum = 0
+let number = parseFloat(io.read());
 
-while (true){
-    let number = parseFloat(io.read(""));
+let sum = 0.0
+
+while (sum !== 0){
+    number = parseFloat(io.read(""));
 
     if (number === 0){
         break;
