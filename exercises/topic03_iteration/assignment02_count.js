@@ -15,3 +15,17 @@ Counting always results in integers. Hence, there is no need to print any digits
     4
 
 */
+
+import io from "../../utils/io-for-pf.js"
+
+let number =  parseFloat(io.read());
+
+let count = 0;
+
+while (number !== 0){
+    count = count + 1
+    number = parseFloat(io.read());
+
+}
+
+io.write(count)
